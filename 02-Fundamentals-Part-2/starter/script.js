@@ -11,22 +11,42 @@
 // // const private = 1234;
 
 
-function logger() {
-    console.log(`My name is Robin`);
+// function logger() {
+//     console.log(`My name is Robin`);
+// }
+
+// logger();
+// logger();
+// logger();
+
+
+// function fruitProcessor(apples, oranges) {
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+
+// Function Declaration
+function calcAge1(birthYear) {
+    return 2021 - birthYear;
 }
 
-logger();
-logger();
-logger();
+const age1 = calcAge1(1985);
+console.log(age1);
 
 
-function fruitProcessor(apples, oranges) {
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
+// Function Expression aka Anonymous Function
+const calcAge2 = function(birthYear) {
+    return 2021 - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+const age2 = calcAge2(1983);
+console.log(age2);
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+
