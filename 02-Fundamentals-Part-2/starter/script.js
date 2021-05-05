@@ -51,24 +51,39 @@
 
 
 // Arrow Functions - With Zero Parameters
-const sayHi = () => {
-    console.log(`Hi everyone!`);
+// const sayHi = () => {
+//     console.log(`Hi everyone!`);
+// }
+
+// sayHi();
+
+// // Arrow Function - With 1 Parameter
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+
+// console.log(age3);
+
+// // Arrow Function - Without Parenthesis
+// const greet = name => `Hello ${name}`;
+// console.log(greet('Robin'));
+
+
+// // Arrow Function - With 2 Parameters
+// const addNumbers = (num1, num2) => `The sum of two numbers are: ${num1 + num2}`;
+// const result = addNumbers(15, 5);
+// console.log(result);
+
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
 }
 
-sayHi();
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
 
-// Arrow Function - With 1 Parameter
-const calcAge3 = (birthYear) => 2037 - birthYear;
-const age3 = calcAge3(1991);
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
 
-console.log(age3);
-
-// Arrow Function - Without Parenthesis
-const greet = name => `Hello ${name}`;
-console.log(greet('Robin'));
-
-
-// Arrow Function - With 2 Parameters
-const addNumbers = (num1, num2) => `The sum of two numbers are: ${num1 + num2}`;
-const result = addNumbers(15, 5);
-console.log(result);
+console.log(fruitProcessor(2, 3));
