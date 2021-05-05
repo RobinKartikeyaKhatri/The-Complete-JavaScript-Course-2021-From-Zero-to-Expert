@@ -33,20 +33,42 @@
 
 
 // Function Declaration
-function calcAge1(birthYear) {
-    return 2021 - birthYear;
+// function calcAge1(birthYear) {
+//     return 2021 - birthYear;
+// }
+
+// const age1 = calcAge1(1985);
+// console.log(age1);
+
+
+// // Function Expression aka Anonymous Function
+// const calcAge2 = function(birthYear) {
+//     return 2021 - birthYear;
+// }
+
+// const age2 = calcAge2(1983);
+// console.log(age2);
+
+
+// Arrow Functions - With Zero Parameters
+const sayHi = () => {
+    console.log(`Hi everyone!`);
 }
 
-const age1 = calcAge1(1985);
-console.log(age1);
+sayHi();
+
+// Arrow Function - With 1 Parameter
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1991);
+
+console.log(age3);
+
+// Arrow Function - Without Parenthesis
+const greet = name => `Hello ${name}`;
+console.log(greet('Robin'));
 
 
-// Function Expression aka Anonymous Function
-const calcAge2 = function(birthYear) {
-    return 2021 - birthYear;
-}
-
-const age2 = calcAge2(1983);
-console.log(age2);
-
-
+// Arrow Function - With 2 Parameters
+const addNumbers = (num1, num2) => `The sum of two numbers are: ${num1 + num2}`;
+const result = addNumbers(15, 5);
+console.log(result);
