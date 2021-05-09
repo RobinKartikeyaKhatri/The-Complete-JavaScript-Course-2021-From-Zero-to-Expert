@@ -159,28 +159,40 @@
 
 
 // Array Methods
-const friends = ["Michael", "Steven", "Peter"];
+// const friends = ["Michael", "Steven", "Peter"];
 
 // Add elements to the end
-const newLength = friends.push("Jay");
+// const newLength = friends.push("Jay");
 
-console.log(friends);
-console.log(newLength);
+// console.log(friends);
+// console.log(newLength);
 
 // Add elements to beginning
-friends.unshift("John");
-console.log(friends);
+// friends.unshift("John");
+// console.log(friends);
 
 // Remove elements to end
-const removedElement = friends.pop();
-console.log(friends);
-console.log(removedElement);
+// const removedElement = friends.pop();
+// console.log(friends);
+// console.log(removedElement);
 
 // Remove element from beginning
-const firstRemove = friends.shift();
-console.log(firstRemove);
-console.log(friends);
+// const firstRemove = friends.shift();
+// console.log(firstRemove);
+// console.log(friends);
 
-console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Steven"));
 
-console.log(friends.includes("Peter"));
+// console.log(friends.includes("Peter"));
+
+
+// Objects
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Khatri",
+    age: 2037 - 1991,
+    job: "Teacher",
+    friends: ["Michael", "Peter", "Steven"]
+};
+
