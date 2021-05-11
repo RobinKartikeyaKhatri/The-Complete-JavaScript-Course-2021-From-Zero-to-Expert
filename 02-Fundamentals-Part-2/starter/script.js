@@ -188,33 +188,99 @@
 
 // Objects
 
-const jonas = {
-    firstName: "Jonas",
+// const jonas = {
+//     firstName: "Jonas",
+//     lastName: "Schmedtmann",
+//     age: 2037 - 1991,
+//     job: "Teacher",
+//     friends: ["Michael", "Peter", "Steven"]
+// };
+
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas["lastName"]);
+
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
+
+// const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends");
+
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     console.log("Wrong request! Choose between firstName, lastName, age, job, and friends")
+// }
+
+// jonas.location = "Portugal";
+// jonas["twitter"] = "@jonasschmedtman";
+// console.log(jonas);
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+
+
+// Object Methods
+// const jonas = {
+//     firstName: "Jonas",
+//     lastName: "Schmedtmann",
+//     birthYear: 1991,
+//     job: "Teacher",
+//     friends: ["Michael", "Peter", "Steven"],
+//     hasDriverseLicense: true,
+//     // calcAge: function(birthYear) {
+//     //     return 2037 - birthYear;
+//     // }
+
+//     // calAge: function() {
+//     //     // console.log(this);
+//     //     return 2037 - this.birthYear;
+//     // }
+
+//     calcAge: function() {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     }
+// };
+
+// console.log(jonas.calcAge(1991));
+// console.log(jonas["calcAge"](1991));
+
+// console.log(jonas.calAge());
+// console.log(jonas["calAge"]());
+
+// console.log(jonas);
+// console.log(jonas.calcAge());
+// console.log(jonas);
+
+
+// Challenge
+const robin = {
+    firstName: "Robin",
+    middleName: "Kartikeya",
     lastName: "Khatri",
-    age: 2037 - 1991,
-    job: "Teacher",
-    friends: ["Michael", "Peter", "Steven"]
-};
-
-console.log(jonas);
-
-console.log(jonas.lastName);
-console.log(jonas["lastName"]);
-
-const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
-
-const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends");
-
-if (jonas[interestedIn]) {
-    console.log(jonas[interestedIn]);
-} else {
-    console.log("Wrong request! Choose between firstName, lastName, age, job, and friends")
+    friends: ["Monto", "Amzad", "Bablu", "Kallu"],
+    birthYear: 1985,
+    calculateAge: function() {
+        this.age = 2021 - this.birthYear;
+        return this.age;
+    },
+    hasDriverseLicense: true,
+    hasMarried: false,
+    job: "JavaScript Developer",
+    checkDrivingLicenseStatus: function() {
+        if (this.hasDriverseLicense) {
+            return `a`;
+        } else {
+            return `no`;
+        }
+    },
+    getSummary: function() {
+        return `${this.firstName} ${this.middleName} ${this.lastName} is a ${this.calculateAge()}-year old ${this.job}, and he has ${this.checkDrivingLicenseStatus()} driver's license`;
+    }
 }
 
-jonas.location = "Portugal";
-jonas["twitter"] = "@jonasschmedtman";
-console.log(jonas);
+console.log(robin.getSummary());
 
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+// console.log(`${robin.firstName} ${robin.middleName} ${robin.lastName} is a ${robin.calculateAge()}-year old ${robin.job}, and he has ${robin.checkDrivingLicenseStatus()} driver's license`);
