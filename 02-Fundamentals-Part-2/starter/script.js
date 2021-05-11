@@ -256,31 +256,37 @@
 
 
 // Challenge
-const robin = {
-    firstName: "Robin",
-    middleName: "Kartikeya",
-    lastName: "Khatri",
-    friends: ["Monto", "Amzad", "Bablu", "Kallu"],
-    birthYear: 1985,
-    calculateAge: function() {
-        this.age = 2021 - this.birthYear;
-        return this.age;
-    },
-    hasDriverseLicense: true,
-    hasMarried: false,
-    job: "JavaScript Developer",
-    checkDrivingLicenseStatus: function() {
-        if (this.hasDriverseLicense) {
-            return `a`;
-        } else {
-            return `no`;
-        }
-    },
-    getSummary: function() {
-        return `${this.firstName} ${this.middleName} ${this.lastName} is a ${this.calculateAge()}-year old ${this.job}, and he has ${this.checkDrivingLicenseStatus()} driver's license`;
-    }
-}
+// const robin = {
+//     firstName: "Robin",
+//     middleName: "Kartikeya",
+//     lastName: "Khatri",
+//     friends: ["Monto", "Amzad", "Bablu", "Kallu"],
+//     birthYear: 1985,
+//     calculateAge: function() {
+//         this.age = 2021 - this.birthYear;
+//         return this.age;
+//     },
+//     hasDriverseLicense: true,
+//     hasMarried: false,
+//     job: "JavaScript Developer",
+//     checkDrivingLicenseStatus: function() {
+//         if (this.hasDriverseLicense) {
+//             return `a`;
+//         } else {
+//             return `no`;
+//         }
+//     },
+//     getSummary: function() {
+//         return `${this.firstName} ${this.middleName} ${this.lastName} is a ${this.calculateAge()}-year old ${this.job}, and he has ${this.checkDrivingLicenseStatus()} driver's license`;
+//     }
+// }
 
-console.log(robin.getSummary());
+// console.log(robin.getSummary());
 
 // console.log(`${robin.firstName} ${robin.middleName} ${robin.lastName} is a ${robin.calculateAge()}-year old ${robin.job}, and he has ${robin.checkDrivingLicenseStatus()} driver's license`);
+
+
+// For Loop
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍`);
+}
