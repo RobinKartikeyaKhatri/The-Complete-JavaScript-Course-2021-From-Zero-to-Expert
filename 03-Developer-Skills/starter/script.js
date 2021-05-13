@@ -4,3 +4,5 @@
 const x = 23;
 
 const calAge = (birthYear) => 2037 - birthYear;
+console.log(calAge(1985));
+console.log(calAge(1985));
